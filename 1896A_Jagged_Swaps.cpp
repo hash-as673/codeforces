@@ -2,17 +2,20 @@
 using namespace std;
 
 void solve() {
-    int n, k;
-    cin >> n >> k;
-    vector<long long> a(n);
-    for (int i = 0; i < n; i++) cin >> a[i];
-
-    if (k == 1) {
-        if (is_sorted(a.begin(), a.end())) cout << "YES\n";
-        else cout << "NO\n";
-    } else {
-        cout << "YES\n";
+    int n;
+    cin >> n;
+    vector<int> v(n);
+    for(int i = 0 ; i < n ; i++){
+        cin>>v[i];
     }
+
+    if (v[0] == 1) {
+        cout<<"YES\n";
+    } else {
+        cout<<"NO\n";
+        
+    }
+
 }
 
 int main() {
